@@ -1,0 +1,5 @@
+Game world: "Dark Lands".
+It's a fantasy universe where magic coexists with technology.
+Main races: humans, elves, Orcs.
+There is a war going on between the Kingdom of Light and the Shadow League.
+The main city of the player is Arcania, surrounded by ancient ruins.
