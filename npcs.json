@@ -1,0 +1,38 @@
+{
+  "Garrett": {
+    "location": "Arkanya",
+    "backstory": "A former soldier who lost his family in the war",
+    "attitude": {
+      "outcast": "hostile",
+      "criminal": "suspicious",
+      "neutral": "neutral",
+      "favorite": "friendly",
+      "hero": "respectful"
+    },
+    "greetings": {
+      "hostile": "You again? What do you want, filth?",
+      "suspicious": "I'm watching you... speak quickly.",
+      "neutral": "What do you need?",
+      "friendly": "Good to see you, friend!",
+      "respectful": "Honored to meet you, champion!"
+    }
+  },
+  "Lily": {
+    "location": "Arkanya",
+    "backstory": "A merchant with connections to the black market",
+    "attitude": {
+      "outcast": "opportunistic",
+      "criminal": "businesslike",
+      "neutral": "polite",
+      "favorite": "warm",
+      "hero": "flattering"
+    },
+    "greetings": {
+      "opportunistic": "You look desperate... I might help. For a price.",
+      "businesslike": "Let's make this quick and profitable.",
+      "polite": "Welcome to my shop, traveler.",
+      "warm": "My favorite customer! What can I do for you today?",
+      "flattering": "Oh! A true hero graces my humble stall!"
+    }
+  }
+}
