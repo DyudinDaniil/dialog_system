@@ -9,6 +9,6 @@
     "description": "A dangerous woodland full of creatures",
     "reputation_levels": ["hunted", "neutral", "protector"],
     "points_of_interest": ["witch_hut", "old_bridge", "hidden_cave"],
-    "npcs": ["Eldrin", "Mirabel"]
+    "npcs": ["Eldrin"]
   }
 }
