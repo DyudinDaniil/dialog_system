@@ -1,1 +1,31 @@
-# docker-compose.yml
+version: "3.9"
+services:
+  db:
+    image: postgres:15
+    env_file: .env            # Загружаем переменные для инициализации БД (POSTGRES_USER, и т.д.)
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    build:
+      context: ./backend      # Собираем образ бэкенда из каталога backend
+      dockerfile: Dockerfile
+    env_file: .env            # Передаём все переменные окружения в контейнер FastAPI
+    ports:
+      - "8000:8000"           # (Опционально) маппинг порта бэкенда, если нужно обращаться напрямую
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend     # Собираем образ фронтенда из каталога frontend
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_API_BASE: ${REACT_APP_API_BASE}  # Передаём build-аргумент в Dockerfile фронтенда
+    ports:
+      - "80:80"               # Публикуем порт 80 контейнера (Nginx) на 80 порт хоста
+    depends_on:
+      - app
+
+volumes:
+  pgdata:
