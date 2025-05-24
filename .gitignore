@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.sqlite3
+*.db
+
+# Virtualenv
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints
+
+# VSCode / JetBrains
+.vscode/
+.idea/
+
+# Frontend (Node, Vite)
+frontend/node_modules/
+frontend/dist/
+
+# Logs
+*.log
+
+# Mac / Linux system files
+.DS_Store
+
+# Docker
+**/.env
+docker-compose.override.yml
+
+# Build artifacts
+build/
+*.egg-info/
+.eggs/
+
+# Pytest
+htmlcov/
+.tox/
+.cache/
+.coverage
+*.cover
+coverage.xml
+
+# Nginx
+frontend/nginx.conf~
+
+# Misc
+*.swp
